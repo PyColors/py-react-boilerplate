@@ -1,5 +1,9 @@
-import "./assistance-request.model";
+import { LocaleModel, localeModel } from "./locale.model";
 
-export interface StoreModel {}
+export interface StoreModel {
+  locale: LocaleModel;
+}
 
-export const storeModel: StoreModel = {};
+export const storeModel: StoreModel = {
+  locale: localeModel
+};
