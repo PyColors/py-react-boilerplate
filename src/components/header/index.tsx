@@ -1,15 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
 
-import { APP_NAME } from "../../constants/constants";
 import useStyles from "./style";
 
 const Header = () => {
   const classes = useStyles();
 
   return (
-    <header>
-      <p className={classes.title}>{APP_NAME}</p>
-    </header>
+    <Fragment key="header">
+      <AppBar position="static">
+        <Toolbar className={classes.toolbar}>
+          <Typography className={classes.title} noWrap>
+            App name
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </Fragment>
   );
 };
 

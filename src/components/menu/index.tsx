@@ -4,7 +4,9 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 
 import { RouterProps } from "../../interfaces/router-props.interface";
-import { paths } from "./menu.constants";
+import { PartialMenu } from "./components";
+import { homeMenu, paths } from "./menu.constants";
+
 import { cleanPathname } from "./menu.utils";
 
 interface MenuProps extends RouterProps {}
@@ -19,6 +21,7 @@ const MenuWithRouter = ({ location: { pathname } }: MenuProps) => {
         scrollButtons="on"
         indicatorColor="primary"
       >
+        <PartialMenu items={homeMenu} pathname={cleanedPathname} />
         coco
       </Tabs>
     </AppBar>
