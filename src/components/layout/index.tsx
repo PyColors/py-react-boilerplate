@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 
 import { ChildrenProps } from "../../interfaces/children-props";
+import Header from "../header";
 import { Menu } from "..";
 import Content from "../content";
-import Header from "../header";
+import Footer from "../footer";
 
 interface LayoutProps extends ChildrenProps {}
 
@@ -17,6 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
       {/* <Snackbar /> */}
       {/* <UserInfos /> */}
       <Content>{children}</Content>
+      <Footer />
     </Fragment>
   );
 };

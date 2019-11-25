@@ -1,1 +1,4 @@
-{ "menu.home": "Accueil" }
+{ 
+"menu.home": "Accueil",
+"not.found": "Not found" 
+}
