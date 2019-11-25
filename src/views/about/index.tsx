@@ -4,8 +4,8 @@ import { RouterProps } from "../../interfaces/router-props.interface";
 
 interface AboutProps extends RouterProps {}
 
-const Home = ({ history: { push } }: AboutProps) => {
+const About = ({ history: { push } }: AboutProps) => {
   return <Fragment key="about">About Page</Fragment>;
 };
 
-export default Home;
+export default About;

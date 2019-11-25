@@ -22,7 +22,6 @@ const MenuWithRouter = ({ location: { pathname } }: MenuProps) => {
         indicatorColor="primary"
       >
         <PartialMenu items={homeMenu} pathname={cleanedPathname} />
-        coco
       </Tabs>
     </AppBar>
   );

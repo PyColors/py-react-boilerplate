@@ -1,4 +1,6 @@
 { 
-"menu.home": "Accueil",
-"not.found": "Not found" 
+  "menu.home": "Accueil",
+  "menu.about": "A propos",
+  "menu.contact": "Contact",
+  "not.found": "Not found" 
 }
