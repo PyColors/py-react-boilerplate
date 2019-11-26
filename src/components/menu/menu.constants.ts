@@ -12,5 +12,9 @@ export const homeMenu = [
   {
     path: "/contact",
     label: "menu.contact"
+  },
+  {
+    path: "/sign-up",
+    label: "menu.signUp"
   }
 ];

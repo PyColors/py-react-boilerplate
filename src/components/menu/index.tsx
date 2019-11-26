@@ -1,6 +1,7 @@
+import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
-import React from "react";
+
 import { withRouter } from "react-router-dom";
 
 import { RouterProps } from "../../interfaces/router-props.interface";
