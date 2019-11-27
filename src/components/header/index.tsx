@@ -26,11 +26,11 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <Button href="#" color="primary" variant="contained" className={classes.link}>
+          <Button href="/sign-up" color="primary" variant="contained" className={classes.link}>
             Sign up
           </Button>
-          <Button href="#" color="primary" variant="outlined" className={classes.link}>
-            Login
+          <Button href="/login" color="primary" variant="outlined" className={classes.link}>
+            Sign in
           </Button>
         </Toolbar>
       </AppBar>
