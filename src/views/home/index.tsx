@@ -11,6 +11,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
+    background: '#2c343f',
+    color: 'white'
   },
   main: {
     marginTop: theme.spacing(8),
@@ -30,10 +32,10 @@ const classes = useStyles();
         <CssBaseline />
         <Container component="main" className={classes.main} maxWidth="sm">
           <Typography variant="h2" component="h1" gutterBottom>
-            React boilerplate
+            React Books Boilerplate
           </Typography>
           <Typography variant="h5" component="h2" gutterBottom>
-            {'React hooks boilerplate with Easy Peasy'}
+            {'with Easy Peasy'}
           </Typography>
         </Container>
       </div>
