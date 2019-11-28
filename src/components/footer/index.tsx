@@ -4,6 +4,7 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import { APP_NAME } from '../../constants/constants';
 
 import useStyles from "./style";
 
@@ -66,13 +67,14 @@ const Footer = () => {
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="/">
-              App name
+              {APP_NAME}
             </Link>{' '}
             {new Date().getFullYear()}
           </Typography>
         </Box>
       </Container>
-      </footer>   
+      </footer> 
+ 
     </Fragment>
   );
 };
