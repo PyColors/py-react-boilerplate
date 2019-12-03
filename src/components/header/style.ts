@@ -26,6 +26,12 @@ const useStyles = makeStyles(theme => ({
   },
   menu: {
     margin: "8px 0"
+  },
+  logo: {
+    margin: "10px 0 0",
+    borderRadius: "50px",
+    width: "50px",
+    height: "50px"
   }
 }));
 

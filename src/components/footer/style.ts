@@ -5,7 +5,6 @@ const useStyles = makeStyles(theme => ({
     borderTop: `1px solid ${theme.palette.divider}`,
     borderBottom: `1px solid ${theme.palette.divider}`,
     backgroundColor: "white",
-    marginTop: theme.spacing(8),
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {

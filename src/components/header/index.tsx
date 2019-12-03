@@ -8,6 +8,8 @@ import { APP_NAME } from "../../constants/constants";
 import useStyles from "./style";
 import MenuIcon from "@material-ui/icons/Menu";
 
+import logo from "./logo.jpg";
+
 const Header = () => {
   const classes = useStyles();
 
@@ -20,22 +22,17 @@ const Header = () => {
         className={classes.appBar}
       >
         <Toolbar className={classes.toolbar}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            className={classes.toolbarTitle}
-          >
+          <Typography variant="h6" color="inherit" noWrap>
             <Link
               variant="button"
               color="textPrimary"
               href="/"
               className={classes.link}
             >
-              {APP_NAME}
+              <img className={classes.logo} alt={APP_NAME} src={logo} />
             </Link>
           </Typography>
-          <nav>
+          <nav className={classes.toolbarTitle}>
             <Link
               variant="button"
               color="textPrimary"
@@ -53,11 +50,11 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <Button href="/login" color="primary" className={classes.menu}>
+          <Button href="/login" color="secondary" className={classes.menu}>
             <MenuIcon />
           </Button>
 
-          <Button href="/login" color="primary" className={classes.link}>
+          <Button href="/login" color="secondary" className={classes.link}>
             Sign in
           </Button>
         </Toolbar>
