@@ -11,8 +11,9 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     minHeight: "400px",
-    background: theme.palette.primary.main,
-    color: "white"
+    // background: theme.palette.primary.main,
+    background: "white",
+    color: "black"
   },
   main: {
     marginTop: theme.spacing(8),

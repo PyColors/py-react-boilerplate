@@ -39,7 +39,7 @@ const footers = [
   {
     title: "Resources",
     description: [
-      "Resource",
+      "Sign Up",
       "Resource name",
       "Another resource",
       "Final resource"

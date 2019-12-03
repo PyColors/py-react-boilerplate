@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   appBar: {
-    borderBottom: `3px solid ${theme.palette.divider}`,
+    borderBottom: `1px solid ${theme.palette.divider}`,
     background: "white"
   },
   toolbar: {
@@ -21,7 +21,11 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   link: {
-    margin: theme.spacing(1, 1.5)
+    margin: theme.spacing(1, 1.5),
+    textTransform: "capitalize"
+  },
+  menu: {
+    margin: "8px 0"
   }
 }));
 
