@@ -6,12 +6,44 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import { APP_NAME } from "../../constants/constants";
 import useStyles from "./style";
-import MenuIcon from "@material-ui/icons/Menu";
+
+import IconButton from "@material-ui/core/IconButton";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 import logo from "./logo.jpg";
 
+/**
+ * Transform `item` to nice string for URLs
+ * `toLowerCase`
+ * Replace all spaces by `-`
+ * @param item
+ */
+const transform = (item: string) => {
+  return item
+    .toLowerCase()
+    .split(" ")
+    .join("-");
+};
+
+const options = ["Login", "Contact", "Sign-Up"];
+
+const ITEM_HEIGHT = 48;
+
 const Header = () => {
   const classes = useStyles();
+
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <Fragment key="header">
@@ -50,9 +82,46 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <Button href="/login" color="secondary" className={classes.menu}>
-            <MenuIcon />
-          </Button>
+
+          <div>
+            <IconButton
+              aria-label="more"
+              aria-controls="long-menu"
+              aria-haspopup="true"
+              onClick={handleClick}
+            >
+              <MoreVertIcon />
+            </IconButton>
+            <Menu
+              id="long-menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={open}
+              onClose={handleClose}
+              PaperProps={{
+                style: {
+                  maxHeight: ITEM_HEIGHT * 4.5,
+                  width: 200
+                }
+              }}
+            >
+              {options.map(option => (
+                <MenuItem
+                  key={option}
+                  selected={option === "Atria"}
+                  onClick={handleClose}
+                >
+                  <Link
+                    href={transform(option)}
+                    variant="subtitle1"
+                    color="textSecondary"
+                  >
+                    {option}
+                  </Link>
+                </MenuItem>
+              ))}
+            </Menu>
+          </div>
 
           <Button href="/login" color="secondary" className={classes.link}>
             Sign in
