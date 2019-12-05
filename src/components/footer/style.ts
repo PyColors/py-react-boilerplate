@@ -4,7 +4,6 @@ const useStyles = makeStyles(theme => ({
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
     borderBottom: `1px solid ${theme.palette.divider}`,
-    backgroundColor: "white",
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
