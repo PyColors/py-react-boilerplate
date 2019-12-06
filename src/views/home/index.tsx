@@ -3,25 +3,26 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import logoReact from "./react-logo.png";
 import logoEasyPeasy from "./easy-peasy-logo.png";
 import logoMatUi from "./mat-ui-logo.png";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import logoReactSmall from "./react-logo-small.png";
+import logoMultilanguage from "./multilanguage-logo.png";
 
 import { RouterProps } from "../../interfaces/router-props.interface";
 
 const useStyles = makeStyles(theme => ({
-  body: {
-    backgroundImage: `url(${"https://previews.aspirity.com/easydev/img/landing/header_bg.png"})`
+  page: {
+    backgroundImage: `url(${"https://previews.aspirity.com/easydev/img/landing/header_bg.png"})`,
+    backgroundRepeat: 'no-repeat'
   },
   root: {
     display: "flex",
-    background: "#fafafafa",
     color: "#303333",
     height: "100%",
-    padding: "14% 0"
+    padding: "14% 0",
+
   },
   main: {},
   basline: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   root2: {
     flexGrow: 1,
     padding: "4% 0",
-    background: "#fff"
+    background: "transparent"
   },
   paper: {
     padding: theme.spacing(2),
@@ -39,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   },
   sectionTitle: {
-    padding: theme.spacing(2),
+    padding: '0 18%',
     textAlign: "center",
     color: "#244153",
     fontFamily: "helvetica",
@@ -62,9 +63,18 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     flexFlow: "row-reverse"
   },
-  featureIcon: {
+  featureIconContent: {
     display: "flex",
-    alignItems: "self-end"
+    alignItems: "center",
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    background: '#fafafa',
+  },
+  featureIcon: {
+    height: '24px',
+    width: 'auto',
+    margin: 'auto',
   }
 }));
 
@@ -75,6 +85,7 @@ const Home = ({ history: { push } }: HomeProps) => {
 
   return (
     <Fragment key="home">
+      <div className={classes.page}>
       <div className={classes.root}>
         <CssBaseline />
         <Container component="main" className={classes.main} maxWidth="md">
@@ -108,51 +119,94 @@ const Home = ({ history: { push } }: HomeProps) => {
                 className={classes.sectionTitle}
               >
                 Py Boilerplate based on popular and powerful technological
-                stack. <br />
+                stack.
                 That’s why it allows you to create massive and serious projects
                 easily.
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={2}>{""}</Grid>
+            <Grid item xs={12} sm={4}>
               <figure className={classes.paper}>
                 <img src={logoReact} alt="React logo" />
-                <figcaption>React Based App</figcaption>
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
+                  React Based App
+                </Typography>
               </figure>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={4}>
               <figure className={classes.paper}>
                 <img
                   src={logoEasyPeasy}
                   alt="Easy Peas logo"
                   className={classes.logos}
                 />
-                <figcaption>
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
                   Material-UI: A popular React UI framework
-                </figcaption>
+                </Typography>
+              </figure>
+            </Grid>
+            <Grid item xs={12} sm={2}>{""}</Grid>
+            <Grid item xs={6} sm={3}>
+              <figure className={classes.paper}>
+                <img src={logoMatUi} alt="Material-UI logo" />
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
+                  TypeScript
+                </Typography>
               </figure>
             </Grid>
             <Grid item xs={6} sm={3}>
               <figure className={classes.paper}>
                 <img src={logoMatUi} alt="Material-UI logo" />
-                <figcaption>TypeScript</figcaption>
+ 
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
+                  Material-UI
+                </Typography>
               </figure>
             </Grid>
             <Grid item xs={6} sm={3}>
               <figure className={classes.paper}>
                 <img src={logoMatUi} alt="Material-UI logo" />
-                <figcaption>Material-UI</figcaption>
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
+                  ESLint
+                </Typography>
               </figure>
             </Grid>
             <Grid item xs={6} sm={3}>
               <figure className={classes.paper}>
                 <img src={logoMatUi} alt="Material-UI logo" />
-                <figcaption>???</figcaption>
-              </figure>
-            </Grid>
-            <Grid item xs={6} sm={3}>
-              <figure className={classes.paper}>
-                <img src={logoMatUi} alt="Material-UI logo" />
-                <figcaption>???</figcaption>
+                <Typography
+                  variant="subtitle1"
+                  component="figcaption"
+                  gutterBottom
+                  className={classes.sectionTitle}
+                >
+                  Webpack
+                </Typography>
               </figure>
             </Grid>
           </Grid>
@@ -164,30 +218,30 @@ const Home = ({ history: { push } }: HomeProps) => {
           <Grid container spacing={3}>
             <Grid item xs={12}>
               <Typography
-                variant="h5"
+                variant="h4"
                 component="h3"
                 gutterBottom
                 className={classes.sectionTitle}
               >
-                Features
+                Features 
               </Typography>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoReactSmall} alt="React logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                React Hooks
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
@@ -196,125 +250,126 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Typography>
             </Grid>
 
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoMultilanguage} alt="Multilanguage logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                Multilanguage
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
               >
-                A JavaScript library for building user interfaces
+                Switch to a language service easily
               </Typography>
             </Grid>
 
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoReactSmall} alt="React logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                Sign In
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
               >
-                A JavaScript library for building user interfaces
+                Make a Sign In page easily and quickly
               </Typography>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoReactSmall} alt="React logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                Sign Up
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
               >
-                A JavaScript library for building user interfaces
+                Make a Sign Up page easily and quickly
               </Typography>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoReactSmall} alt="React logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                Material-UI
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
               >
-                A JavaScript library for building user interfaces
+                React components for faster and easier web development
               </Typography>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureBoxIcon}>
-              <div className={classes.featureIcon}>
-                <LockOutlinedIcon />
+            <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
+              <div className={classes.featureIconContent}>
+                <img className={classes.featureIcon} src={logoReactSmall} alt="React logo" />
               </div>
             </Grid>
-            <Grid item xs={6} sm={3} className={classes.featureSection}>
+            <Grid item xs={6} sm={4} className={classes.featureSection}>
               <Typography
                 variant="h5"
                 component="h5"
                 gutterBottom
                 className={classes.featureTitle}
               >
-                React App
+                TypeScript
               </Typography>
               <Typography
-                variant="subtitle2"
+                variant="subtitle1"
                 component="p"
                 gutterBottom
                 className={classes.featureDescription}
               >
-                A JavaScript library for building user interfaces
+                A superset of JavaScript that compiles to clean 
               </Typography>
             </Grid>
           </Grid>
         </Container>
-      </div>
+        </div>
+        </div>
     </Fragment>
   );
 };

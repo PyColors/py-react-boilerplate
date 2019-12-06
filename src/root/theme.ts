@@ -1,7 +1,10 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
-export default createMuiTheme({
+ export default createMuiTheme({
   palette: {
+    background: {
+      default: `url(${"https://previews.aspirity.com/easydev/img/landing/header_bg.png"})`
+    },
     primary: {
       main: "#4cc3ff"
     },
@@ -22,5 +25,14 @@ export default createMuiTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"'
     ].join(",")
+  },
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          background: '#fff',
+        }
+      }
+    }
   }
 });
