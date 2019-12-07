@@ -12,6 +12,8 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
+import Locale from "../locale";
+
 import logo from "./logo.jpg";
 
 /**
@@ -126,6 +128,8 @@ const Header = () => {
           <Button href="/login" color="secondary" className={classes.link}>
             Sign in
           </Button>
+          {/* to switch the language */}
+          <Locale />
         </Toolbar>
       </AppBar>
     </Fragment>
