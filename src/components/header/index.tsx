@@ -65,7 +65,7 @@ const Header = () => {
             </Link>
           </Typography>
           <nav className={classes.toolbarTitle}>
-            <Link
+            {/* <Link
               variant="button"
               color="textPrimary"
               href="/about"
@@ -80,7 +80,7 @@ const Header = () => {
               className={classes.link}
             >
               Contact
-            </Link>
+            </Link> */}
           </nav>
 
           <div>
