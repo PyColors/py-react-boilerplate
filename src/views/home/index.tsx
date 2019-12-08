@@ -7,9 +7,6 @@ import Grid from "@material-ui/core/Grid";
 import logoReact from "./react-logo.png";
 import logoEasyPeasy from "./easy-peasy-logo.png";
 import logoMatUi from "./mat-ui-logo.png";
-import logoReactSmall from "./react-logo-small.png";
-import logoMultilanguage from "./multilanguage-logo.png";
-
 import { RouterProps } from "../../interfaces/router-props.interface";
 
 const useStyles = makeStyles(theme => ({
@@ -237,11 +234,13 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
+                  <span
+                    role="img"
+                    aria-label="donut"
                     className={classes.featureIcon}
-                    src={logoReactSmall}
-                    alt="React logo"
-                  />
+                  >
+                    🎣
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>
@@ -265,11 +264,13 @@ const Home = ({ history: { push } }: HomeProps) => {
 
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
+                  <span
+                    role="img"
+                    aria-label="donut"
                     className={classes.featureIcon}
-                    src={logoMultilanguage}
-                    alt="Multilanguage logo"
-                  />
+                  >
+                    🏴󠁧󠁢󠁥󠁮󠁧󠁿
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>
@@ -293,11 +294,13 @@ const Home = ({ history: { push } }: HomeProps) => {
 
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
+                  <span
+                    role="img"
+                    aria-label="donut"
                     className={classes.featureIcon}
-                    src={logoReactSmall}
-                    alt="React logo"
-                  />
+                  >
+                    🎉
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>
@@ -320,11 +323,13 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
+                  <span
+                    role="img"
+                    aria-label="donut"
                     className={classes.featureIcon}
-                    src={logoReactSmall}
-                    alt="React logo"
-                  />
+                  >
+                    🎊
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>
@@ -347,8 +352,12 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <span role="img" className={classes.featureIcon}>
-                    🚀
+                  <span
+                    role="img"
+                    aria-label="donut"
+                    className={classes.featureIcon}
+                  >
+                    🦋
                   </span>
                 </div>
               </Grid>
@@ -372,11 +381,13 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
+                  <span
+                    role="img"
+                    aria-label="donut"
                     className={classes.featureIcon}
-                    src={logoReactSmall}
-                    alt="React logo"
-                  />
+                  >
+                    💊
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>

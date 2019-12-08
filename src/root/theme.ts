@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     background: {
-      default: `url(${"https://previews.aspirity.com/easydev/img/landing/header_bg.png"})`
+      default: "#E0FFFF"
     },
     primary: {
       main: "#4cc3ff"
