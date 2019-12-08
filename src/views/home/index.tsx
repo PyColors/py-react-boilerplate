@@ -49,7 +49,9 @@ const useStyles = makeStyles(theme => ({
   logos: {
     width: "168px"
   },
-  featureSection: {},
+  featureSection: {
+    margin: "30px 0 0"
+  },
   featureDescription: {
     textAlign: "left"
   },
@@ -71,7 +73,7 @@ const useStyles = makeStyles(theme => ({
     background: "#fafafa"
   },
   featureIcon: {
-    height: "24px",
+    fontSize: "26px",
     width: "auto",
     margin: "auto"
   }
@@ -108,7 +110,7 @@ const Home = ({ history: { push } }: HomeProps) => {
         </div>
 
         <div className={classes.root2}>
-          <Container component="main" className={classes.main} maxWidth="md">
+          <Container component="main" className={classes.main} maxWidth="lg">
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Typography
@@ -122,6 +124,11 @@ const Home = ({ history: { push } }: HomeProps) => {
                   projects easily.
                 </Typography>
               </Grid>
+            </Grid>
+          </Container>
+
+          <Container component="main" className={classes.main} maxWidth="md">
+            <Grid container spacing={3}>
               <Grid item xs={12} sm={2}>
                 {""}
               </Grid>
@@ -225,7 +232,7 @@ const Home = ({ history: { push } }: HomeProps) => {
                   gutterBottom
                   className={classes.sectionTitle}
                 >
-                  Features
+                  Key features
                 </Typography>
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
@@ -280,7 +287,7 @@ const Home = ({ history: { push } }: HomeProps) => {
                   gutterBottom
                   className={classes.featureDescription}
                 >
-                  Switch to a language service easily
+                  Switch to a French and English easily
                 </Typography>
               </Grid>
 
@@ -340,11 +347,9 @@ const Home = ({ history: { push } }: HomeProps) => {
               </Grid>
               <Grid item xs={6} sm={2} className={classes.featureBoxIcon}>
                 <div className={classes.featureIconContent}>
-                  <img
-                    className={classes.featureIcon}
-                    src={logoReactSmall}
-                    alt="React logo"
-                  />
+                  <span role="img" className={classes.featureIcon}>
+                    🚀
+                  </span>
                 </div>
               </Grid>
               <Grid item xs={6} sm={4} className={classes.featureSection}>
