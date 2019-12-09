@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     background: {
-      default: "#E0FFFF"
+      default: "#fff"
     },
     primary: {
       main: "#4cc3ff"
@@ -17,7 +17,6 @@ export default createMuiTheme({
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
-      "Roboto",
       '"Helvetica Neue"',
       "Arial",
       "sans-serif",
