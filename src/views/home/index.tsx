@@ -23,7 +23,8 @@ const useStyles = makeStyles(theme => ({
   basline: {
     fontWeight: "bold",
     textAlign: "center",
-    color: "white"
+    color: "white",
+    fontFamily: "Indie Flower, cursive"
   },
 
   root2: {
@@ -49,7 +50,6 @@ const useStyles = makeStyles(theme => ({
     padding: "0 18%",
     textAlign: "center",
     color: "#ffff07",
-    fontFamily: "helvetica",
     fontWeight: "bold",
     margin: "auto"
   },

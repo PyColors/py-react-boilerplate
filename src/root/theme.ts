@@ -14,6 +14,7 @@ export default createMuiTheme({
   },
   typography: {
     fontFamily: [
+      "Comfortaa",
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
@@ -28,9 +29,12 @@ export default createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       "@global": {
-        body: {
-          // backgroundImage: `url(${"../../bg.png"})`,
+        ".MuiTab-root": {
+          textTransform: "inherit"
         }
+        // body: {
+        //   backgroundImage: `url(${"../../bg.png"})`,
+        // }
       }
     }
   }

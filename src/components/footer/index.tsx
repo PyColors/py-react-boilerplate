@@ -70,7 +70,7 @@ const Footer = () => {
                       <Link
                         href={transform(item)}
                         variant="subtitle1"
-                        color="textPrimary"
+                        color="textSecondary"
                       >
                         {item}
                       </Link>
