@@ -11,8 +11,7 @@ import { RouterProps } from "../../interfaces/router-props.interface";
 
 const useStyles = makeStyles(theme => ({
   page: {
-    backgroundImage: `url(${"https://previews.aspirity.com/easydev/img/landing/header_bg.png"})`,
-    backgroundRepeat: "no-repeat"
+    // background: "#7A55E7",
   },
   root: {
     display: "flex",
@@ -22,13 +21,24 @@ const useStyles = makeStyles(theme => ({
   },
   main: {},
   basline: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "white"
   },
 
   root2: {
     flexGrow: 1,
     padding: "4% 0",
-    background: "transparent"
+    background: "#111",
+    boxShadow:
+      "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)"
+  },
+
+  root3: {
+    flexGrow: 1,
+    padding: "4% 0",
+    background: "#1c1c1c",
+    color: "white"
   },
   paper: {
     padding: theme.spacing(2),
@@ -38,7 +48,7 @@ const useStyles = makeStyles(theme => ({
   sectionTitle: {
     padding: "0 18%",
     textAlign: "center",
-    color: "#244153",
+    color: "#ffff07",
     fontFamily: "helvetica",
     fontWeight: "bold",
     margin: "auto"
@@ -50,7 +60,8 @@ const useStyles = makeStyles(theme => ({
     margin: "30px 0 0"
   },
   featureDescription: {
-    textAlign: "left"
+    textAlign: "left",
+    color: "#444"
   },
   featureTitle: {
     textAlign: "left",
@@ -67,7 +78,7 @@ const useStyles = makeStyles(theme => ({
     width: "60px",
     height: "60px",
     borderRadius: "50%",
-    background: "#fafafa"
+    background: "#222"
   },
   featureIcon: {
     fontSize: "26px",
@@ -107,7 +118,7 @@ const Home = ({ history: { push } }: HomeProps) => {
         </div>
 
         <div className={classes.root2}>
-          <Container component="main" className={classes.main} maxWidth="lg">
+          <Container component="main" className={classes.main} maxWidth="xl">
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Typography
@@ -124,7 +135,7 @@ const Home = ({ history: { push } }: HomeProps) => {
             </Grid>
           </Container>
 
-          <Container component="main" className={classes.main} maxWidth="md">
+          {/* <Container component="main" className={classes.main} maxWidth="md">
             <Grid container spacing={3}>
               <Grid item xs={12} sm={2}>
                 {""}
@@ -216,10 +227,10 @@ const Home = ({ history: { push } }: HomeProps) => {
                 </figure>
               </Grid>
             </Grid>
-          </Container>
+          </Container> */}
         </div>
 
-        <div className={classes.root2}>
+        <div className={classes.root3}>
           <Container component="main" className={classes.main} maxWidth="md">
             <Grid container spacing={3}>
               <Grid item xs={12}>

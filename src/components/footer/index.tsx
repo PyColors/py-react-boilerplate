@@ -61,7 +61,7 @@ const Footer = () => {
           <Grid container spacing={4} justify="space-evenly">
             {footers.map(footer => (
               <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h6" color="primary" gutterBottom>
+                <Typography variant="h6" color="secondary" gutterBottom>
                   {footer.title}
                 </Typography>
                 <ul>
@@ -70,7 +70,7 @@ const Footer = () => {
                       <Link
                         href={transform(item)}
                         variant="subtitle1"
-                        color="textSecondary"
+                        color="textPrimary"
                       >
                         {item}
                       </Link>

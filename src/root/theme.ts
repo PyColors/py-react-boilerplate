@@ -3,13 +3,13 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     background: {
-      default: "#fff"
+      default: "#111"
     },
     primary: {
-      main: "#4cc3ff"
+      main: "#111"
     },
     secondary: {
-      main: "#8a9496"
+      main: "#ffff07"
     }
   },
   typography: {
@@ -29,7 +29,7 @@ export default createMuiTheme({
     MuiCssBaseline: {
       "@global": {
         body: {
-          background: "#fff"
+          // backgroundImage: `url(${"../../bg.png"})`,
         }
       }
     }
