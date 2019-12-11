@@ -6,50 +6,10 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import { APP_NAME } from "../../constants/constants";
 
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+
 import useStyles from "./style";
-
-/**
- * Transform `item` to nice string for URLs
- * `toLowerCase`
- * Replace all spaces by `-`
- * @param item
- */
-const transform = (item: string) => {
-  return item
-    .toLowerCase()
-    .split(" ")
-    .join("-");
-};
-
-const footers = [
-  {
-    title: "Company",
-    description: ["Team", "History", "About", "Contact", "Locations"]
-  },
-  {
-    title: "Features",
-    description: [
-      "Cool stuff",
-      "Random feature",
-      "Team feature",
-      "Developer stuff",
-      "Another one"
-    ]
-  },
-  {
-    title: "Resources",
-    description: [
-      "Sign Up",
-      "Resource name",
-      "Another resource",
-      "Final resource"
-    ]
-  },
-  {
-    title: "Legal",
-    description: ["Privacy policy", "Terms of use"]
-  }
-];
 
 const Footer = () => {
   const classes = useStyles();
@@ -57,39 +17,76 @@ const Footer = () => {
   return (
     <Fragment key="footer">
       <footer className={classes.footer}>
-        <Container maxWidth="md" component="footer">
-          <Grid container spacing={4} justify="space-evenly">
-            {footers.map(footer => (
-              <Grid item xs={6} sm={3} key={footer.title}>
-                <Typography variant="h6" color="secondary" gutterBottom>
-                  {footer.title}
+        <Container maxWidth="md" component="section">
+          <Grid container spacing={3}>
+            <Grid item xs={5}>
+               <Typography
+                  variant="h2"
+                  component="h3"
+                  className={classes.follow}
+                  gutterBottom
+                >
+                  Follow us
                 </Typography>
-                <ul>
-                  {footer.description.map(item => (
-                    <li key={item}>
-                      <Link
-                        href={transform(item)}
-                        variant="subtitle1"
-                        color="textSecondary"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </Grid>
-            ))}
+                <TwitterIcon className={classes.icon} color="secondary" />
+                <FacebookIcon className={classes.icon} color="secondary" />
+              <Typography
+                variant="subtitle2"
+                component="h3"
+                gutterBottom
+                >
+                {APP_NAME} Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </Typography>
+            </Grid>
+            <Grid item xs={1}></Grid>
+            <Grid item xs={6}>
+              <Typography
+                variant="h5"
+                component="h3"
+                gutterBottom
+                className={classes.subscribe}
+              >
+                Unknown printer took a galley of type and scrambled it.
+              </Typography>
+              <nav className={classes.toolbarTitle}>
+                <Link
+                  variant="button"
+                  color="textPrimary"
+                  href="#"
+                  className={classes.link}
+                >
+                  Privacy policy
+                </Link>
+                <Link
+                  variant="button"
+                  color="textPrimary"
+                  href="#"
+                  className={classes.link}
+                >
+                  Terms of use
+                </Link>
+                <Link
+                  variant="button"
+                  color="textPrimary"
+                  href="/contact"
+                  className={classes.link}
+                >
+                  Contact
+                </Link>
+              </nav>
+            </Grid>
           </Grid>
-          <Box mt={5}>
-            <Typography variant="body2" color="textSecondary" align="center">
-              {"Copyright © "}
-              <Link color="inherit" href="/">
-                {APP_NAME}
-              </Link>{" "}
-              {new Date().getFullYear()}
-            </Typography>
-          </Box>
         </Container>
+        <Box mt={5} className={classes.bottom}>
+          <Typography variant="body2" align="center" >
+            {"Copyright © "}
+            <Link color="inherit" href="/">
+              {APP_NAME}
+            </Link>{" "}
+            {new Date().getFullYear()}
+          </Typography>
+        </Box>
       </footer>
     </Fragment>
   );
