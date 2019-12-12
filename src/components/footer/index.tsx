@@ -53,7 +53,7 @@ const Footer = () => {
                 <Link
                   variant="button"
                   color="textPrimary"
-                  href="#"
+                  href="/privacy-policy"
                   className={classes.link}
                 >
                   Privacy policy
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Link
                   variant="button"
                   color="textPrimary"
-                  href="#"
+                  href="/terms"
                   className={classes.link}
                 >
                   Terms of use
