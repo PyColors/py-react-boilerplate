@@ -14,7 +14,7 @@ interface MenuProps extends RouterProps {}
 
 const useStyles = makeStyles(theme => ({
   indicator: {
-    backgroundColor: "#ffff07"
+    backgroundColor: theme.palette.secondary.main
   }
 }));
 
