@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
@@ -11,12 +10,14 @@ import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-
 import Locale from "../locale";
 
-import logo from "./logo.jpg";
+import SimpleModal from "../simple-modal";
+import Nav from '../nav'
 
-/**
+import logo from "./logo-black.png";
+
+ /**
  * Transform `item` to nice string for URLs
  * `toLowerCase`
  * Replace all spaces by `-`
@@ -55,6 +56,9 @@ const Header = () => {
         elevation={0}
         className={classes.appBar}
       >
+
+       {/* <Nav />    */}
+
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap>
             <Link
@@ -67,9 +71,9 @@ const Header = () => {
             </Link>
           </Typography>
           <nav className={classes.toolbarTitle}>
-            {/* <Link
+            <Link
               variant="button"
-              color="textPrimary"
+              
               href="/about"
               className={classes.link}
             >
@@ -77,13 +81,15 @@ const Header = () => {
             </Link>
             <Link
               variant="button"
-              color="textPrimary"
+            
               href="/contact"
               className={classes.link}
             >
               Contact
-            </Link> */}
+            </Link>  
           </nav>
+
+
 
           <div>
             <IconButton
@@ -125,9 +131,10 @@ const Header = () => {
             </Menu>
           </div>
 
-          <Button href="/login" color="secondary" className={classes.link}>
-            Sign in
-          </Button>
+          <SimpleModal>
+             <Nav />
+          </SimpleModal>  
+  
           {/* to switch the language */}
           <Locale />
         </Toolbar>
