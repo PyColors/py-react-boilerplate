@@ -4,9 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import logoReact from "./react-logo.png";
-import logoEasyPeasy from "./easy-peasy-logo.png";
-import logoMatUi from "./mat-ui-logo.png";
 import { RouterProps } from "../../interfaces/router-props.interface";
 
 const useStyles = makeStyles(theme => ({
@@ -38,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   root3: {
     flexGrow: 1,
     padding: "4% 0",
-    background: "#1c1c1c",
+    background: theme.palette.secondary.main,
     color: "white"
   },
   paper: {
@@ -49,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   sectionTitle: {
     padding: "0 18%",
     textAlign: "center",
-    color: "#ffff07",
+    color: theme.palette.secondary.main,
     fontWeight: "bold",
     margin: "auto"
   },
@@ -65,7 +62,8 @@ const useStyles = makeStyles(theme => ({
   },
   featureTitle: {
     textAlign: "left",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    color: "#111"
   },
   featureBoxIcon: {
     display: "flex",
