@@ -18,16 +18,25 @@ const useStyles = makeStyles(theme => ({
   },
   main: {},
   basline: {
+    fontSize: "8rem",
     fontWeight: "bold",
     textAlign: "center",
     color: "white",
-    fontFamily: "Indie Flower, cursive"
+    fontFamily: "arial"
+  },
+  headerInnerTitlePoint: {
+    color: theme.palette.secondary.main
+  },
+  subBasline: {
+    fontSize: "1.5rem",
+    textAlign: "right",
+    color: "#fff",
   },
 
   root2: {
     flexGrow: 1,
     padding: "4% 0",
-    background: "#111",
+    background: "#222",
     boxShadow:
       "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)"
   },
@@ -35,8 +44,8 @@ const useStyles = makeStyles(theme => ({
   root3: {
     flexGrow: 1,
     padding: "4% 0",
-    background: theme.palette.secondary.main,
-    color: "white"
+    background: "white",
+    color: "#222"
   },
   paper: {
     padding: theme.spacing(2),
@@ -46,7 +55,8 @@ const useStyles = makeStyles(theme => ({
   sectionTitle: {
     padding: "0 18%",
     textAlign: "center",
-    color: theme.palette.secondary.main,
+    // color: theme.palette.secondary.main,
+    color: "white",
     fontWeight: "bold",
     margin: "auto"
   },
@@ -95,7 +105,7 @@ const Home = ({ history: { push } }: HomeProps) => {
       <div className={classes.page}>
         <div className={classes.root}>
           <CssBaseline />
-          <Container component="main" className={classes.main} maxWidth="md">
+          <Container component="main" className={classes.main} maxWidth="lg">
             <Typography
               variant="h1"
               component="h1"
@@ -103,16 +113,18 @@ const Home = ({ history: { push } }: HomeProps) => {
               className={classes.basline}
             >
               Py Boilerplate
+              <span className={classes.headerInnerTitlePoint}>_</span>
             </Typography>
             <Typography
               variant="h4"
               component="h2"
               gutterBottom
-              className={classes.basline}
+              className={classes.subBasline}
             >
               {" Develop with React, TypeScript and, Easy Peasy"}
             </Typography>
           </Container>
+          
         </div>
 
         <div className={classes.root2}>
@@ -125,7 +137,7 @@ const Home = ({ history: { push } }: HomeProps) => {
                   gutterBottom
                   className={classes.sectionTitle}
                 >
-                  Py Boilerplate based on popular and powerful technological
+                  Py Boilerplate based on  <span className={classes.headerInnerTitlePoint}>popular</span> and <span className={classes.headerInnerTitlePoint}>powerful</span> technological
                   stack. That’s why it allows you to create massive and serious
                   projects easily.
                 </Typography>
