@@ -44,9 +44,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-interface PrivacyPolicyProps extends RouterProps {}
+interface TermsProps extends RouterProps {}
 
-const Terms = ({ history: { push } }: PrivacyPolicyProps) => {
+const Terms = ({ history: { push } }: TermsProps) => {
   const classes = useStyles();
 
   return (
