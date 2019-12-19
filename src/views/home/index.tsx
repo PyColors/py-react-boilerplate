@@ -60,6 +60,13 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     margin: "auto"
   },
+  sectionTitleFeatures: {
+    padding: "0 18%",
+    textAlign: "center",
+    color: "#333",
+    fontWeight: "bold",
+    margin: "auto"
+  },
   logos: {
     width: "168px"
   },
@@ -248,7 +255,7 @@ const Home = ({ history: { push } }: HomeProps) => {
                   variant="h4"
                   component="h3"
                   gutterBottom
-                  className={classes.sectionTitle}
+                  className={classes.sectionTitleFeatures}
                 >
                   Key features
                 </Typography>
