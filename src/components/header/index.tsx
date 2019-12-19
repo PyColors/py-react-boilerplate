@@ -97,6 +97,7 @@ const Header = () => {
               aria-controls="long-menu"
               aria-haspopup="true"
               onClick={handleClick}
+              color='secondary'
             >
               <MoreVertIcon />
             </IconButton>
