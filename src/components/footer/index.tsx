@@ -19,7 +19,7 @@ const Footer = () => {
       <footer className={classes.footer}>
         <Container maxWidth="md" component="section">
           <Grid container spacing={3}>
-            <Grid item xs={5}>
+            <Grid xs={12} md={5}>
                <Typography
                   variant="h2"
                   component="h3"
@@ -40,7 +40,7 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item xs={1}></Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
               <Typography
                 variant="h5"
                 component="h3"
