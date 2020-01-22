@@ -34,10 +34,10 @@ const useStyles = makeStyles(theme => ({
   content: {
     background: "#fff",
     borderTop: "solid 14px #333",
-    padding: "0 120px"
+    padding: "60px 120px"
   },
   titleContent: {
-    margin: "60px 0 20px",
+    margin: "0 0 20px",
     fontSize: "3.4375rem",
     lineHeight: "3.75rem",
     fontFamily: "Akkurat-bold,sans-serif,Helvetica Neue,Helvetica,Arial",
