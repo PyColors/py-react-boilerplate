@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     margin: "auto"
   },
-  sectionTitleFeatures: {
+  x: {
     padding: "0 18%",
     textAlign: "center",
     color: "#333",
@@ -86,6 +86,10 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
     flexFlow: "row-reverse"
+  },
+  sectionTitleFeatures: {
+    fontSize: "3rem",
+    textAlign: "center"
   },
   featureIconContent: {
     display: "flex",

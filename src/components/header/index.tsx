@@ -119,7 +119,7 @@ const Header = () => {
                   key={option}
                   selected={option === "Atria"}
                   onClick={handleClose}
-                >
+                > 
                   <Link
                     href={transform(option)}
                     variant="subtitle1"
