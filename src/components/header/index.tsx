@@ -12,12 +12,12 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Locale from "../locale";
 
-import SimpleModal from "../simple-modal";
-import Nav from '../nav'
+// import SimpleModal from "../simple-modal";
+// import Nav from "../nav";
 
 import logo from "./logo-black.png";
 
- /**
+/**
  * Transform `item` to nice string for URLs
  * `toLowerCase`
  * Replace all spaces by `-`
@@ -56,9 +56,7 @@ const Header = () => {
         elevation={0}
         className={classes.appBar}
       >
-
-       {/* <Nav />    */}
-
+        {/* <Nav /> */}
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap>
             <Link
@@ -71,25 +69,13 @@ const Header = () => {
             </Link>
           </Typography>
           <nav className={classes.toolbarTitle}>
-            <Link
-              variant="button"
-              
-              href="/about"
-              className={classes.link}
-            >
+            <Link variant="button" href="/about" className={classes.link}>
               About
             </Link>
-            <Link
-              variant="button"
-            
-              href="/contact"
-              className={classes.link}
-            >
+            <Link variant="button" href="/contact" className={classes.link}>
               Contact
-            </Link>  
+            </Link>
           </nav>
-
-
 
           <div>
             <IconButton
@@ -97,7 +83,7 @@ const Header = () => {
               aria-controls="long-menu"
               aria-haspopup="true"
               onClick={handleClick}
-              color='secondary'
+              color="secondary"
             >
               <MoreVertIcon />
             </IconButton>
@@ -119,7 +105,7 @@ const Header = () => {
                   key={option}
                   selected={option === "Atria"}
                   onClick={handleClose}
-                > 
+                >
                   <Link
                     href={transform(option)}
                     variant="subtitle1"
@@ -132,10 +118,10 @@ const Header = () => {
             </Menu>
           </div>
 
-          <SimpleModal>
-             <Nav />
-          </SimpleModal>  
-  
+          {/* <SimpleModal>
+            <Nav />
+          </SimpleModal> */}
+
           {/* to switch the language */}
           <Locale />
         </Toolbar>

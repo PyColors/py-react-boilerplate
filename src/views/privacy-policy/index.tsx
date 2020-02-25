@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     color: "#575757",
     lineHeight: "2.25rem",
     fontSize: "1.25rem",
-    fontFamily: "Akkurat,sans-serif,Helvetica Neue,Helvetica,Arial",
+    fontFamily: "Akkurat,sans-serif,Helvetica Neue,Helvetica,Arial"
   },
   headerInnerTitle: {
     fontFamily: "arial",
@@ -73,68 +73,70 @@ const PrivacyPolicy = ({ history: { push } }: PrivacyPolicyProps) => {
             <Grid container spacing={3}>
               <Grid item xs={6}>
                 <Typography variant="h2" component="h3" gutterBottom>
-                   <ContactSupportIcon fontSize="large" /> 
+                  <ContactSupportIcon fontSize="large" />
                 </Typography>
               </Grid>
 
               <Grid item xs={6}>
                 <Typography variant="h5" component="h3" gutterBottom>
-                Data protection rules 
+                  Data protection rules
                 </Typography>
               </Grid>
             </Grid>
           </Container>
-
         </Container>
 
-        <Container maxWidth="md" component="section" className={classes.content}>
+        <Container
+          maxWidth="md"
+          component="section"
+          className={classes.content}
+        >
           <Grid container spacing={3}>
             <Grid item xs={12}>
-            <Typography 
-              variant="h4" 
-              component="h1" 
-              gutterBottom
-              className={classes.titleContent}
-              >
-                Post haec Gallus
-            </Typography>
-              <p>
-                Hierapolim profecturus ut expeditioni specie
-                tenus adesset, Antiochensi plebi suppliciter obsecranti ut
-                inediae dispelleret metum, quae per multas difficilisque causas
-                adfore iam sperabatur, non ut mos est principibus, quorum
-                diffusa potestas localibus subinde medetur aerumnis, disponi
-                quicquam statuit vel ex provinciis alimenta transferri
-                conterminis, sed <b>consularem</b> Syriae Theophilum prope adstantem
-                ultima metuenti multitudini dedit id adsidue replicando quod
-                invito rectore nullus egere poterit victu.
-              </p>
-              <p>
-                Nimia in peiores haeserat plagas, ut narrabimus
-                postea, aemulis consarcinantibus insidias graves apud
-                Constantium, cetera medium principem sed siquid auribus eius
-                huius modi quivis infudisset ignotus, <b>acerbum</b> et inplacabilem et
-                in hoc causarum titulo dissimilem sui.
-              </p>
-              <Typography 
-                variant="h4" 
-                component="h1" 
+              <Typography
+                variant="h4"
+                component="h1"
                 gutterBottom
                 className={classes.titleContent}
-                >
-                  Sed cautela
+              >
+                Post haec Gallus
               </Typography>
               <p>
-                Enim virtute amabilius, nihil quod magis adliciat ad
-                diligendum, quippe cum propter virtutem et probitatem etiam eos,
-                quos numquam vidimus, quodam modo diligamus. Quis est qui C.
-                Fabrici, M'. Curi non cum caritate aliqua benevola memoriam
-                usurpet, quos numquam viderit? quis autem est, qui Tarquinium
-                Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus
-                ducibus de imperio in Italia est <b>decertatum</b>, Pyrrho et
-                Hannibale; ab altero propter probitatem eius non nimis alienos
-                animos habemus, alterum propter crudelitatem semper haec civitas
-                oderit.
+                Hierapolim profecturus ut expeditioni specie tenus adesset,
+                Antiochensi plebi suppliciter obsecranti ut inediae dispelleret
+                metum, quae per multas difficilisque causas adfore iam
+                sperabatur, non ut mos est principibus, quorum diffusa potestas
+                localibus subinde medetur aerumnis, disponi quicquam statuit vel
+                ex provinciis alimenta transferri conterminis, sed{" "}
+                <b>consularem</b> Syriae Theophilum prope adstantem ultima
+                metuenti multitudini dedit id adsidue replicando quod invito
+                rectore nullus egere poterit victu.
+              </p>
+              <p>
+                Nimia in peiores haeserat plagas, ut narrabimus postea, aemulis
+                consarcinantibus insidias graves apud Constantium, cetera medium
+                principem sed siquid auribus eius huius modi quivis infudisset
+                ignotus, <b>acerbum</b> et inplacabilem et in hoc causarum
+                titulo dissimilem sui.
+              </p>
+              <Typography
+                variant="h4"
+                component="h1"
+                gutterBottom
+                className={classes.titleContent}
+              >
+                Sed cautela
+              </Typography>
+              <p>
+                Enim virtute amabilius, nihil quod magis adliciat ad diligendum,
+                quippe cum propter virtutem et probitatem etiam eos, quos
+                numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici,
+                M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos
+                numquam viderit? quis autem est, qui Tarquinium Superbum, qui
+                Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de
+                imperio in Italia est <b>decertatum</b>, Pyrrho et Hannibale; ab
+                altero propter probitatem eius non nimis alienos animos habemus,
+                alterum propter crudelitatem semper haec civitas oderit.
               </p>
               <p>
                 Advenit post multos Scudilo Scutariorum tribunus velamento
@@ -146,20 +148,20 @@ const PrivacyPolicy = ({ history: { push } }: PrivacyPolicyProps) => {
                 participemque eum suae maiestatis adscisceret, futurum laborum
                 quoque socium, quos Arctoae provinciae diu fessae poscebant.
               </p>
-              <Typography 
-                variant="h4" 
-                component="h1" 
+              <Typography
+                variant="h4"
+                component="h1"
                 gutterBottom
                 className={classes.titleContent}
-                >
-                  Et licet quocumque oculos
+              >
+                Et licet quocumque oculos
               </Typography>
               <p>
-                Flexeris feminas adfatim multas
-                spectare cirratas, quibus, si nupsissent, per aetatem ter iam
-                nixus poterat suppetere liberorum, ad usque taedium pedibus
-                pavimenta tergentes iactari volucriter gyris, dum exprimunt
-                innumera simulacra, quae finxere fabulae theatrales.
+                Flexeris feminas adfatim multas spectare cirratas, quibus, si
+                nupsissent, per aetatem ter iam nixus poterat suppetere
+                liberorum, ad usque taedium pedibus pavimenta tergentes iactari
+                volucriter gyris, dum exprimunt innumera simulacra, quae finxere
+                fabulae theatrales.
               </p>
               <p>
                 Siquis enim militarium vel honoratorum aut nobilis inter suos
