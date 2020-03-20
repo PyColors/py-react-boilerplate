@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     color: "#303333",
     height: "100%",
     padding: "14% 0",
-    background: "#111"
+    background: "#000"
   },
   main: {},
   basline: {
