@@ -14,7 +14,8 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     color: "#303333",
     height: "100%",
-    padding: "14% 0"
+    padding: "14% 0",
+    background: "#111"
   },
   main: {},
   basline: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   subBasline: {
     fontSize: "1.5rem",
     textAlign: "right",
-    color: "#fff",
+    color: "#fff"
   },
 
   root2: {
@@ -135,7 +136,6 @@ const Home = ({ history: { push } }: HomeProps) => {
               {" Develop with React, TypeScript and, Easy Peasy"}
             </Typography>
           </Container>
-          
         </div>
 
         <div className={classes.root2}>
@@ -148,9 +148,14 @@ const Home = ({ history: { push } }: HomeProps) => {
                   gutterBottom
                   className={classes.sectionTitle}
                 >
-                  Py Boilerplate based on  <span className={classes.headerInnerTitlePoint}>popular</span> and <span className={classes.headerInnerTitlePoint}>powerful</span> technological
-                  stack. That’s why it allows you to create massive and serious
-                  projects easily.
+                  Py Boilerplate based on{" "}
+                  <span className={classes.headerInnerTitlePoint}>popular</span>{" "}
+                  and{" "}
+                  <span className={classes.headerInnerTitlePoint}>
+                    powerful
+                  </span>{" "}
+                  technological stack. That’s why it allows you to create
+                  massive and serious projects easily.
                 </Typography>
               </Grid>
             </Grid>
