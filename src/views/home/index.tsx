@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { RouterProps } from "../../interfaces/router-props.interface";
+import mainBg from "./bg.jpeg";
 
 const useStyles = makeStyles(theme => ({
   page: {
@@ -15,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     color: "#303333",
     height: "100%",
     padding: "14% 0",
-    background: "#000"
+    background: `#000 url(${mainBg})`
   },
   main: {},
   basline: {
@@ -37,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   root2: {
     flexGrow: 1,
     padding: "4% 0",
-    background: "#222",
+    background: "#000",
     boxShadow:
       "0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)"
   },
