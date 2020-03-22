@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   appBar: {
-    background: "#111"
+    background: "#000"
   },
   toolbar: {
     flexWrap: "wrap"
@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   link: {
     margin: theme.spacing(1, 1.5),
     textTransform: "capitalize",
-    color: 'white'
+    color: "white"
   },
   menu: {
     margin: "8px 0"
@@ -34,15 +34,15 @@ const useStyles = makeStyles(theme => ({
     height: "50px"
   },
   modal: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: "2px solid #000",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(2, 4, 3)
   }
 }));
 

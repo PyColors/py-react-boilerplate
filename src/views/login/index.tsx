@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(6, 2),
     width: "55%",
-    margin: "50px auto"
+    margin: "80px auto"
   },
   paper: {
     marginTop: theme.spacing(8),
@@ -46,7 +46,7 @@ const Login = ({ history: { push } }: LoginProps) => {
   const classes = useStyles();
 
   return (
-    <Fragment key="home">
+    <Fragment key="login">
       <Paper className={classes.root}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
