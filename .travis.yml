@@ -4,8 +4,10 @@ os: osx
 
 node_js:
   - 10
-  - 9
   - 8
+
+  script:
+  - npm run test
 
 notifications:
   email:
