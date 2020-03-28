@@ -19,6 +19,7 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
+    "@testing-library/react": "9.3.2",
     "@types/react-router-dom": "5.1.2"
   },
   "scripts": {

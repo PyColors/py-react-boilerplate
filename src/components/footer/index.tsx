@@ -6,8 +6,8 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import { APP_NAME } from "../../constants/constants";
 
-import TwitterIcon from '@material-ui/icons/Twitter';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 import useStyles from "./style";
 
@@ -19,24 +19,21 @@ const Footer = () => {
       <footer className={classes.footer}>
         <Container maxWidth="md" component="section">
           <Grid container spacing={3}>
-            <Grid xs={12} md={5}>
-               <Typography
-                  variant="h2"
-                  component="h3"
-                  className={classes.follow}
-                  gutterBottom
-                >
-                  Follow us
-                </Typography>
-                <TwitterIcon className={classes.icon} color="secondary" />
-                <FacebookIcon className={classes.icon} color="secondary" />
+            <Grid item xs={12} md={5}>
               <Typography
-                variant="subtitle2"
+                variant="h2"
                 component="h3"
+                className={classes.follow}
                 gutterBottom
-                >
-                {APP_NAME} Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+              >
+                Follow us
+              </Typography>
+              <TwitterIcon className={classes.icon} color="secondary" />
+              <FacebookIcon className={classes.icon} color="secondary" />
+              <Typography variant="subtitle2" component="h3" gutterBottom>
+                {APP_NAME} Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s.
               </Typography>
             </Grid>
             <Grid item xs={1}></Grid>
@@ -79,7 +76,7 @@ const Footer = () => {
           </Grid>
         </Container>
         <Box mt={5} className={classes.bottom}>
-          <Typography variant="body2" align="center" >
+          <Typography variant="body2" align="center">
             {"Copyright © "}
             <Link color="inherit" href="/">
               {APP_NAME}
